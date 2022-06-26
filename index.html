@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto settimana 9</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="Stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+<body> <!-- Per motivi di tempo non ho fatto in tempo a rendere il codice dinamico per far bene anche la parte grafica, l'ho solo abbozzata -->
+    <div class="container">
+        <div class="smartphones">
+            <div class="cardUser1" style="width: 18rem;">
+                <img src="img/chef.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Carlo Magno</h5>
+                <p>Chiamata in corso:</p>
+                <h5>00:00:00</h5>
+                <button onclick="chiama()" class="bg-success"><i class="lni lni-phone"></i></button>
+                <button onclick="chiudi()" class="bg-danger"><i class="lni lni-phone-set"></i></button>
+                </div>
+                <hr>
+                <p>Credito Residuo:</p>
+                <hr>
+                <p>N. Chiamate Effettuate:</p>
+                <button onclick="resetchiamate()" class="bg-danger"><i class="lni lni-cross-circle"></i></button>
+                <hr>
+                <p>Registro Chiamate:</p>
+            </div>
+        
+            <div class="cardUser2" style="width: 18rem;">
+                <img src="img/queen.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Gianna Nanna</h5>
+                <p>Chiamata in corso:</p>
+                <h5>00:00:00</h5>
+                <button onclick="chiama()" class="bg-success"><i class="lni lni-phone"></i></button>
+                <button onclick="chiudi()" class="bg-danger"><i class="lni lni-phone-set"></i></button>
+                </div>
+                <hr>
+                <p>Credito Residuo:</p>
+                <hr>
+                <p>N. Chiamate Effettuate:</p>
+                <button onclick="resetchiamate()" class="bg-danger"><i class="lni lni-cross-circle"></i></button>
+                <hr>
+                <p>Registro Chiamate:</p>
+            </div>
+        
+            <div class="cardUser3" style="width: 18rem;">
+                <img src="img/speaker.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Beppe Reppe</h5>
+                <p>Chiamata in corso:</p>
+                <h5>00:00:00</h5>
+                <button onclick="chiama()" class="bg-success"><i class="lni lni-phone"></i></button>
+                <button onclick="chiudi()" class="bg-danger"><i class="lni lni-phone-set"></i></button>
+                </div>
+                <hr>
+                <p>Credito Residuo:</p>
+                <hr>
+                <p>N. Chiamate Effettuate:</p>
+                <button onclick="resetchiamate()" class="bg-danger"><i class="lni lni-cross-circle"></i></button>
+                <hr>
+                <p>Registro Chiamate:</p>
+            </div>
+        </div>
+        
+        <div class="ricarica">
+            <h5>Ricarica:</h5>
+            <input placeholder="Soldi" type="number">
+            <button onclick="ricarica()">Carlo Magno</button>
+            <button onclick="ricarica()">Gianna Nanna</button>
+            <button onclick="ricarica()">Beppe Reppe</button>
+        </div>
+    </div>
+</body>
+</html>
